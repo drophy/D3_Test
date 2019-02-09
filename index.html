@@ -7,6 +7,9 @@
   </head>
   <body>
 
+    <h1>Example 70</h1>
+    <p>This is just an example from <a href="http://curran.github.io/screencasts/introToD3/examples/viewer/#/70">a pretty cool D3 beginner tutorial</a></p>
+    
     <script>
 
       var svg = d3.select("body").append("svg")
@@ -25,7 +28,8 @@
         // Update
         circles
           .attr("cx", function (d){ return d.x; })
-          .attr("cy", function (d){ return d.y; });
+          .attr("cy", function (d){ return d.y; })
+          .attr("fill", green);
 
         // Exit
         circles.exit().remove();
